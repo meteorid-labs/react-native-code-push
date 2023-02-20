@@ -1,5 +1,7 @@
 # React Native module for CodePush (next)
-### Update:
+### Install
+`npm install react-native-code-push-next`
+### About:
 #### This package is for newer React Native versions (0.71.3+).
 ### Why?
 #### The original repo of CodePush is not maintained actively. I have merged the required changes from this [issue](https://github.com/microsoft/react-native-code-push/issues/2418#issuecomment-1426484628).
