@@ -1,9 +1,9 @@
-[![appcenterbanner](https://user-images.githubusercontent.com/31293287/32969262-3cc5d48a-cb99-11e7-91bf-fa57c67a371c.png)](http://microsoft.github.io/code-push/)
-
-#### [Sign up With App Center](https://appcenter.ms/signup?utm_source=CodePush&utm_medium=Azure) to use CodePush
-
-# React Native Module for CodePush
-
+# React Native module for CodePush (next)
+### Update:
+#### This package is for newer React Native versions (0.71.3+).
+### Why?
+#### The original repo of CodePush is not maintained actively. I have merged the required changes from this [issue](https://github.com/microsoft/react-native-code-push/issues/2418#issuecomment-1426484628).
+-----
 *Note: This README is only relevant to the latest version of our plugin. If you are using an older version, please switch to the relevant tag on [our GitHub repo](https://github.com/microsoft/react-native-code-push) to view the docs for that particular version.*
 
 ![Switching tags](https://user-images.githubusercontent.com/42337914/57237511-0835de80-7030-11e9-88fa-64eb200478d0.png)
