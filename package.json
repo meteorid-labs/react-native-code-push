@@ -1,6 +1,6 @@
 {
   "name": "react-native-code-push-next",
-  "version": "7.2.3",
+  "version": "7.2.4",
   "description": "React Native plugin for the CodePush service",
   "main": "CodePush.js",
   "typings": "typings/react-native-code-push.d.ts",
@@ -73,8 +73,8 @@
       ]
     },
     "commands": {
-      "postlink": "node node_modules/react-native-code-push/scripts/postlink/run",
-      "postunlink": "node node_modules/react-native-code-push/scripts/postunlink/run"
+      "postlink": "node node_modules/react-native-code-push-next/scripts/postlink/run",
+      "postunlink": "node node_modules/react-native-code-push-next/scripts/postunlink/run"
     }
   }
 }
