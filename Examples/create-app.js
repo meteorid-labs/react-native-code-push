@@ -261,14 +261,14 @@ function androidSetup() {
 
     let buildGradleContents = fs.readFileSync(buildGradlePath, "utf8");
     const reactGradleLink = buildGradleContents.match(/\napply from: ["'].*?react\.gradle["']/)[0];
-    const codePushGradleLink = `\napply from: "../../node_modules/react-native-code-push-next/android/codepush.gradle"`;
+    const codePushGradleLink = `\napply from: "../../node_modules/react-native-code-push/android/codepush.gradle"`;
     buildGradleContents = buildGradleContents.replace(reactGradleLink,
         `${reactGradleLink}${codePushGradleLink}`);
     fs.writeFileSync(buildGradlePath, buildGradleContents);
 
     let settingsGradleContents = fs.readFileSync(settingsGradlePath, "utf8");
     const settingsGradleInclude = "include \':app\'";
-    const codePushProjectImport= `':react-native-code-push'\nproject(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push-next/android/app')`;
+    const codePushProjectImport= `':react-native-code-push'\nproject(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')`;
     settingsGradleContents = settingsGradleContents.replace(settingsGradleInclude,
         `${settingsGradleInclude}, ${codePushProjectImport}`);
     fs.writeFileSync(settingsGradlePath, settingsGradleContents);

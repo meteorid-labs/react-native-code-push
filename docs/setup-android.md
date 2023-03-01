@@ -24,7 +24,7 @@ In order to integrate CodePush into your Android project, please perform the fol
     ```gradle
     ...
     include ':app', ':react-native-code-push'
-    project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push-next/android/app')
+    project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
     ```
     
 2. In your `android/app/build.gradle` file, add the `codepush.gradle` file as an additional build task definition underneath `react.gradle`:
@@ -32,7 +32,7 @@ In order to integrate CodePush into your Android project, please perform the fol
     ```gradle
     ...
     apply from: "../../node_modules/react-native/react.gradle"
-    apply from: "../../node_modules/react-native-code-push-next/android/codepush.gradle"
+    apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
     ...
     ```
 
@@ -130,7 +130,7 @@ And that's it for installation using RNPM! Continue below to the [Plugin Configu
     ```gradle
     ...
     apply from: "../../node_modules/react-native/react.gradle"
-    apply from: "../../node_modules/react-native-code-push-next/android/codepush.gradle"
+    apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
     ...
     ```
 

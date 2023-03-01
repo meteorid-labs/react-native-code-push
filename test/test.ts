@@ -91,7 +91,7 @@ class RNAndroid extends Platform.Android implements RNPlatform {
         const settingsGradle = path.join(innerprojectDirectory, "android", "settings.gradle");
         TestUtil.replaceString(settingsGradle,
             "include ':app'",
-            "include ':app', ':react-native-code-push'\nproject(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push-next/android/app')");
+            "include ':app', ':react-native-code-push'\nproject(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')");
 
         //// Set the app version to 1.0.0 instead of 1.0
         // Set the app version to 1.0.0 in android/app/build.gradle
